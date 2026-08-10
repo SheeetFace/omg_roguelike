@@ -3,11 +3,10 @@ function initPlayer(gridX, gridY, rX, rY) {
 
     player = container.__addChildBox(PLAYER_CONFIG);
 
-    const cellCenterX = (gridX * TILE_SIZE) + (TILE_SIZE / 2);
-    const cellCenterY = (gridY * TILE_SIZE) + (TILE_SIZE / 2);
+    const startPixels = getPixelCoordsOrKey(gridX, gridY, true);
 
-    player.__x = cellCenterX - worldState.halfWidth;
-    player.__y = cellCenterY - worldState.halfHeight;
+    player.__x = startPixels.x;
+    player.__y = startPixels.y;
 
     player.gridX = gridX;
     player.gridY = gridY;
@@ -41,19 +40,19 @@ function movePlayer(x, y) {
     player.gridX = targetX;
     player.gridY = targetY;
 
-    const targetPixelX = (player.gridX * TILE_SIZE) + (TILE_SIZE / 2) - worldState.halfWidth;
-    const targetPixelY = (player.gridY * TILE_SIZE) + (TILE_SIZE / 2) - worldState.halfHeight;
+    const pixels = getPixelCoordsOrKey(player.gridX, player.gridY, true);
 
-    player.__img = "hero_walk_anim"; 
+    player.__img = "hero_walk_anim";
 
     player.__anim({
-        __x: targetPixelX,
-        __y: targetPixelY
+        __x: pixels.x,
+        __y: pixels.y
     }, STEP_DURATION);
 
     _setTimeout(() => {
         isAnimating = false;
-        player.__img = "hero_idle"; 
+        player.__img = "hero_idle";
+        checkCellTriggers(player.gridX, player.gridY);
     }, STEP_DURATION);
 }
 
@@ -77,15 +76,24 @@ function isPlayerMovePossible(targetGridX, targetGridY) {
         return false;
     }
 
-    const halfWidth = worldState.worldWidth / 2;
-    const halfHeight = worldState.worldHeight / 2;
-    const targetPixelX = (targetGridX * TILE_SIZE) + (TILE_SIZE / 2) - halfWidth;
-    const targetPixelY = (targetGridY * TILE_SIZE) + (TILE_SIZE / 2) - halfHeight;
-    consoleLog(worldState.walls);
-    if (worldState.walls[`${targetPixelX},${targetPixelY}`] === true) {
+    const key = getPixelCoordsOrKey(targetGridX, targetGridY);
+
+    if (worldState.walls[key] === true) {
         consoleLog("блок кретка");
         return false;
     }
 
     return true;
+}
+
+
+function checkCellTriggers(targetGridX, targetGridY) {
+
+    const key = getPixelCoordsOrKey(targetGridX, targetGridY);
+
+    if (worldState.exitCells[key] === true) {
+        consoleLog(`выход`);
+        // loadNextLevel();
+        return;
+    }
 }

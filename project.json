@@ -33,7 +33,8 @@
             "game-globals.js",
             "looper.js",
             "levels-config.js",
-            "animations-registry.js"
+            "animations-registry.js",
+            "utils.js"
         ],
         "src/utils/": [
         ],
@@ -42,8 +43,6 @@
         "src/gameplay/": [
             "player.js",
             "player-controller.js"
-        ],
-        "src/ui/": [
         ],
         "src/level/": [
             "level-init.js"

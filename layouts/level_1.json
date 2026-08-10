@@ -55,6 +55,19 @@
         ],
         "__transformAnchor": false,
         "__childs": {
+          "exit_block": {
+            "__color": 486149,
+            "__alpha": 0.5,
+            "__size": [
+              40,
+              40
+            ],
+            "__ofs": [
+              -50,
+              -150,
+              -1
+            ]
+          },
           "floor": {
             "__img": "tile_1",
             "__size": [
@@ -793,7 +806,7 @@
               -50
             ]
           },
-          "_5": {
+          "_6": {
             "__rotate": -160,
             "__img": "trader",
             "__size": [

@@ -28,6 +28,7 @@ function parseLevel() {
 
     worldState.targetContainer = null;
     worldState.walls = {};
+    worldState.exitCells = {};
 
     if (level && level.__traverse) {
         level.__traverse(node => {
@@ -49,14 +50,17 @@ function parseLevel() {
                 worldState.walls[`${objX},${objY}`] = true;
             }
 
+            if (node.name && node.name.includes('exit_block')) {
+                worldState.exitCells[`${objX},${objY}`] = true;
+            }
             //! трейдер
-            //! некст лвл
             //! энэмис???
         });
     }
     worldState.halfWidth = worldState.worldWidth / 2;
     worldState.halfHeight = worldState.worldHeight / 2;
 
-    worldState.maxGridX = Math.floor(worldState.worldWidth / TILE_SIZE);
-    worldState.maxGridY = Math.floor(worldState.worldHeight / TILE_SIZE);
+    worldState.maxGridX = floor(worldState.worldWidth / TILE_SIZE);
+    worldState.maxGridY = floor(worldState.worldHeight / TILE_SIZE);
+
 }
