@@ -1,0 +1,642 @@
+[
+  {
+    "__color": 0,
+    "name": "new_win",
+    "__alpha": 0.4,
+    "__size": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "__scaleF": 0,
+    "__text": {},
+    "__keyframes": {
+      "loop": 0,
+      "__loopDisabled": 1,
+      "__easing": 27,
+      "__track": {
+        "__transform": {
+          "0": [
+            20,
+            -48,
+            0,
+            0,
+            0
+          ],
+          "120": [
+            20,
+            -48,
+            1,
+            1,
+            0
+          ]
+        },
+        "__alpha": {
+          "0": 0,
+          "64": 0,
+          "139": 0.4
+        }
+      }
+    },
+    "__childs": {
+      "star_empty_2": {
+        "__img": "ice_star_empty",
+        "__size": [
+          100,
+          100
+        ],
+        "__ofs": [
+          400,
+          -418
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                400,
+                -418,
+                0,
+                0,
+                0
+              ],
+              "165": [
+                103.725,
+                -51.305,
+                1.5,
+                1.5,
+                0
+              ],
+              "258": [
+                103.725,
+                -53,
+                1,
+                1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "star_empty_1": {
+        "__img": "ice_star_empty",
+        "__size": [
+          100,
+          100
+        ],
+        "__scaleF": 1.3,
+        "__ofs": [
+          -30,
+          -600
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                -30,
+                -600,
+                0,
+                0,
+                0
+              ],
+              "123": [
+                -10,
+                -100,
+                1.3,
+                1.3,
+                0
+              ],
+              "162": [
+                -10,
+                -100,
+                1,
+                1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "star_fill_1": {
+        "__img": "ice_star_fill",
+        "__size": [
+          100,
+          100
+        ],
+        "__scaleF": 1.3,
+        "__ofs": [
+          -30,
+          -600
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                -30,
+                -600,
+                0,
+                0,
+                0
+              ],
+              "123": [
+                -10,
+                -100,
+                1.3,
+                1.3,
+                0
+              ],
+              "162": [
+                -10,
+                -100,
+                1,
+                1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "star_fill_0": {
+        "__img": "ice_star_fill",
+        "__needScissor": false,
+        "__size": [
+          100,
+          100
+        ],
+        "__scaleF": 1.5,
+        "__ofs": [
+          -124,
+          -53
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                -746.463,
+                -543.541,
+                0,
+                0,
+                0
+              ],
+              "60": [
+                -62.797,
+                -5.561,
+                1.5,
+                1.5,
+                0
+              ],
+              "110": [
+                -123.671,
+                -53.463,
+                1,
+                1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "score": {
+        "__img": "score",
+        "__size": [
+          201,
+          50
+        ],
+        "__scaley": 1.02167,
+        "__text": {},
+        "__ofs": [
+          -151,
+          141
+        ]
+      },
+      "win_ifarme": {
+        "__img": "win",
+        "__size": [
+          206,
+          133
+        ],
+        "__ofs": [
+          -9,
+          -234
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 6,
+          "__track": {
+            "__transform": {
+              "0": [
+                -9,
+                -234,
+                0,
+                1,
+                0
+              ],
+              "105": [
+                -9,
+                -234,
+                1,
+                1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "total_score_text": {
+        "__blending": 3,
+        "__size": [
+          244,
+          100
+        ],
+        "__scaley": 1.02167,
+        "__text": {
+          "__fontsize": 70,
+          "__lineWidth": 7,
+          "__lineColor": "#78dbce",
+          "__lineSpacing": 1,
+          "__text": "0",
+          "__fontface": "GAMERIA",
+          "__fontWeight": 4,
+          "__shadow": {
+            "__blur": 16,
+            "__color": 941809
+          }
+        },
+        "__ofs": [
+          80,
+          141
+        ]
+      },
+      "buttn_retry": {
+        "__img": "button_empty",
+        "__size": [
+          200,
+          60
+        ],
+        "__scaleF": 1.1,
+        "__text": {
+          "__color": "#e3f2fb",
+          "__fontsize": 28,
+          "__lineWidth": 4,
+          "__lineColor": 747955,
+          "__fontspacing": 0.5,
+          "__text": "try_again",
+          "__shader": "",
+          "__fontface": "GAMERIA",
+          "__fontWeight": 1,
+          "__shadow": {
+            "__blur": 5,
+            "__color": "#2784cc"
+          }
+        },
+        "__ofs": [
+          -336,
+          315
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 25,
+          "__track": {
+            "__transform": {
+              "0": [
+                -336,
+                315,
+                0,
+                0,
+                0
+              ],
+              "157": [
+                -336,
+                315,
+                1.1,
+                1.1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "button_next": {
+        "__img": "button_empty",
+        "__size": [
+          200,
+          60
+        ],
+        "__scaleF": 1.1,
+        "__text": {
+          "__color": "#e3f2fb",
+          "__fontsize": 28,
+          "__lineWidth": 4,
+          "__lineColor": 747955,
+          "__fontspacing": 0.5,
+          "__text": "next_lvl",
+          "__fontface": "GAMERIA",
+          "__fontWeight": 1,
+          "__shadow": {
+            "__blur": 5,
+            "__color": "#2784cc"
+          }
+        },
+        "__ofs": [
+          245,
+          315
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 25,
+          "__track": {
+            "__transform": {
+              "0": [
+                245,
+                315,
+                0,
+                0,
+                0
+              ],
+              "157": [
+                245,
+                315,
+                1.1,
+                1.1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "star_fill_2": {
+        "__img": "ice_star_fill",
+        "__size": [
+          100,
+          100
+        ],
+        "__ofs": [
+          400,
+          -418
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                400,
+                -418,
+                0,
+                0,
+                0
+              ],
+              "165": [
+                103.725,
+                -51.305,
+                1.5,
+                1.5,
+                0
+              ],
+              "258": [
+                103.725,
+                -53,
+                1,
+                1,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "block_score_count": {
+        "__color": "#3fa19a",
+        "__rotate": 20,
+        "__scaleF": 0.5,
+        "__text": {
+          "__fontsize": 20,
+          "__lineWidth": 1,
+          "__lineColor": "#55b1d7",
+          "__text": "1",
+          "__fontface": "GAMERIA",
+          "__shadow": {
+            "__blur": 1,
+            "__color": 40191
+          }
+        },
+        "__ofs": [
+          140,
+          165
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                -980,
+                715,
+                0,
+                0,
+                20
+              ],
+              "40": [
+                114.236,
+                177.652,
+                0.5,
+                0.5,
+                20
+              ],
+              "80": [
+                140,
+                165,
+                1,
+                1,
+                20
+              ]
+            }
+          }
+        },
+        "__childs": {
+          "block_score_text": {
+            "__color": "#b615d6",
+            "__text": {
+              "__fontsize": 17,
+              "__lineWidth": 4,
+              "__lineColor": "#5a43cf",
+              "__fontspacing": 1,
+              "__text": "win_blocks_label",
+              "__fontface": "GAMERIA",
+              "__fontWeight": 1,
+              "__shadow": {
+                "__color": 822235
+              }
+            },
+            "__ofs": [
+              -109,
+              3
+            ]
+          }
+        }
+      },
+      "ammo_bonus_count": {
+        "__color": "#90e1c1",
+        "__rotate": 25,
+        "__scaleF": 0.5,
+        "__text": {
+          "__fontsize": 20,
+          "__lineWidth": 1,
+          "__lineColor": "#50d725",
+          "__text": "1",
+          "__fontface": "GAMERIA",
+          "__shadow": {
+            "__blur": 1,
+            "__color": "#14ac58"
+          }
+        },
+        "__ofs": [
+          190,
+          170
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                -980,
+                715,
+                0,
+                0,
+                25
+              ],
+              "60": [
+                223.962,
+                154.18,
+                0.5,
+                0.5,
+                25
+              ],
+              "100": [
+                190,
+                170,
+                1,
+                1,
+                25
+              ]
+            }
+          }
+        },
+        "__childs": {
+          "ammo_bonus_text": {
+            "__color": 615388,
+            "__text": {
+              "__fontsize": 17,
+              "__lineWidth": 4,
+              "__lineColor": "#1f8100",
+              "__fontspacing": 1,
+              "__text": "win_ammo_label",
+              "__fontface": "GAMERIA",
+              "__fontWeight": 1,
+              "__shadow": {
+                "__color": 890743
+              }
+            },
+            "__ofs": [
+              -110,
+              2
+            ]
+          }
+        }
+      },
+      "penalty_score_count": {
+        "__color": 523129,
+        "__rotate": 30,
+        "__scaleF": 0.5,
+        "__text": {
+          "__fontsize": 20,
+          "__lineWidth": 1,
+          "__lineColor": "#ed1d1d",
+          "__text": "1",
+          "__fontface": "GAMERIA",
+          "__shadow": {
+            "__blur": 1,
+            "__color": "#e50c0c"
+          }
+        },
+        "__ofs": [
+          230,
+          175
+        ],
+        "__keyframes": {
+          "loop": 0,
+          "__loopDisabled": 1,
+          "__easing": 27,
+          "__track": {
+            "__transform": {
+              "0": [
+                -980,
+                715,
+                0,
+                0,
+                30
+              ],
+              "80": [
+                336.114,
+                127.643,
+                0.5,
+                0.5,
+                30
+              ],
+              "120": [
+                230,
+                175,
+                1,
+                1,
+                30
+              ]
+            }
+          }
+        },
+        "__childs": {
+          "penalty_score_text": {
+            "__color": "#7b3138",
+            "__size": [
+              18,
+              3
+            ],
+            "__text": {
+              "__fontsize": 17,
+              "__lineWidth": 4,
+              "__lineColor": "#ed1d1d",
+              "__fontspacing": 1,
+              "__text": "win_penalty_label",
+              "__fontface": "GAMERIA",
+              "__fontWeight": 1,
+              "__shadow": {
+                "__color": "#eb2b2b"
+              }
+            },
+            "__ofs": [
+              -89,
+              4
+            ]
+          }
+        }
+      }
+    }
+  }
+]

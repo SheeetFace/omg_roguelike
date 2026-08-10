@@ -1,0 +1,1534 @@
+[
+  {
+    "name": "level_1",
+    "__size": [
+      1609,
+      768
+    ],
+    "__childs": {
+      "sky": {
+        "__color": "#607bc0",
+        "__blending": 0,
+        "__size": [
+          2583,
+          1226
+        ]
+      },
+      "userInputArea": {
+        "__color": "#b9c1c7",
+        "__alpha": 0.8,
+        "__img": "gg_body",
+        "sha": 0,
+        "sva": 2,
+        "__size": [
+          47,
+          80
+        ],
+        "__ofs": [
+          225,
+          -83,
+          -16
+        ],
+        "__childs": {
+          "_0": {
+            "__color": "#fb22a0",
+            "__alpha": 0,
+            "__rotate": 3.9,
+            "__img": "block_3",
+            "__size": [
+              25,
+              25
+            ],
+            "__childs": {
+              "rubber": {
+                "__color": 0.8186,
+                "__padding": 0,
+                "__alpha": 0.8,
+                "__img": "gg_hand",
+                "sha": 2,
+                "sva": 1,
+                "__corner": [
+                  104,
+                  36
+                ],
+                "__size": [
+                  88,
+                  21
+                ],
+                "__text": {},
+                "__ofs": [
+                  67,
+                  2,
+                  -16
+                ],
+                "__childs": {
+                  "power_indicator": {
+                    "__color": "#47f1af",
+                    "__alpha": 0.75,
+                    "__text": {
+                      "__color": "#18a0fc",
+                      "__fontsize": 70,
+                      "__text": ".",
+                      "__fontWeight": 9,
+                      "__shadow": [
+                        0,
+                        0,
+                        1
+                      ]
+                    },
+                    "__ofs": [
+                      6,
+                      -23
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ph_world": {
+        "__size": [
+          1515,
+          768
+        ],
+        "__ofs": [
+          -40,
+          3
+        ],
+        "__childs": {
+          "ground": {
+            "__color": "#296b22",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__size": [
+              2111,
+              165
+            ],
+            "__ofs": [
+              -4,
+              378
+            ]
+          },
+          "_1": {
+            "__color": 0.8309,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0.8,
+            "__img": "block_1",
+            "__size": [
+              65,
+              65
+            ],
+            "__ofs": [
+              -38,
+              258,
+              -16
+            ]
+          },
+          "_2": {
+            "__color": 0.8275,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0.8,
+            "__img": "block_2",
+            "__size": [
+              100,
+              40
+            ],
+            "__ofs": [
+              -205,
+              271,
+              -16
+            ]
+          },
+          "_3": {
+            "__color": 0.8275,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0.8,
+            "__img": "block_3",
+            "__size": [
+              50,
+              120
+            ],
+            "__ofs": [
+              110,
+              233,
+              -16
+            ]
+          },
+          "_4": {
+            "__color": 0.8275,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0.8,
+            "__img": "block_3",
+            "__size": [
+              50,
+              120
+            ],
+            "__ofs": [
+              159,
+              234,
+              -16
+            ]
+          },
+          "tree_1_col_3": {
+            "__color": "#fd628a",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__size": [
+              25,
+              100
+            ],
+            "__ofs": [
+              629,
+              251,
+              -15
+            ]
+          },
+          "tree_1_col_2": {
+            "__color": "#f112d0",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__size": [
+              80,
+              26
+            ],
+            "__ofs": [
+              626,
+              270
+            ]
+          },
+          "tree_1_col_1": {
+            "__color": "#2c6e33",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__rotate": -16,
+            "__size": [
+              8,
+              148
+            ],
+            "__ofs": [
+              603,
+              207,
+              -16
+            ]
+          },
+          "tree_1_col_0": {
+            "__color": "#5188ae",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__rotate": 20,
+            "__size": [
+              9,
+              143
+            ],
+            "__ofs": [
+              647,
+              207,
+              -16
+            ]
+          },
+          "tree_1": {
+            "__color": "#909faf",
+            "__alpha": 0.8,
+            "__rotate": 2,
+            "__img": "tree_1",
+            "__size": [
+              100,
+              166
+            ],
+            "__ofs": [
+              627,
+              218,
+              -16
+            ]
+          },
+          "_10": {
+            "__color": 0.8275,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 1
+            },
+            "__alpha": 0.8,
+            "__img": "block_4",
+            "__size": [
+              65,
+              65
+            ],
+            "__ofs": [
+              336,
+              258,
+              -16
+            ]
+          },
+          "rock": {
+            "__color": "#b40f73",
+            "__z": -1,
+            "__childs": {
+              "rock_1": {
+                "__color": 0.627,
+                "__alpha": 0.9,
+                "__img": "rock_1",
+                "__size": [
+                  81,
+                  56
+                ],
+                "__ofs": [
+                  -320,
+                  280,
+                  -15
+                ]
+              },
+              "rock_1_col_2": {
+                "__color": "#76fe85",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__rotate": 23,
+                "__size": [
+                  13,
+                  7
+                ],
+                "__ofs": [
+                  -347,
+                  290,
+                  -15
+                ]
+              },
+              "rock_1_col_3": {
+                "__color": "#e3cce7",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__rotate": -19,
+                "__size": [
+                  9,
+                  28
+                ],
+                "__ofs": [
+                  -338,
+                  279,
+                  -16
+                ]
+              },
+              "rock_1_col_1": {
+                "__color": "#aefcb0",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__size": [
+                  20,
+                  10
+                ],
+                "__ofs": [
+                  -346,
+                  295,
+                  -16
+                ]
+              },
+              "rock_1_col_0": {
+                "__color": 22527,
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__size": [
+                  33,
+                  40
+                ],
+                "__ofs": [
+                  -318,
+                  282,
+                  -120
+                ]
+              },
+              "rock_1_col_4": {
+                "__color": "#eed015",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__size": [
+                  11,
+                  11
+                ],
+                "__ofs": [
+                  -318,
+                  259,
+                  -16
+                ]
+              },
+              "rock_1_col_5": {
+                "__color": "#d1c604",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__rotate": 34,
+                "__size": [
+                  16,
+                  4
+                ],
+                "__ofs": [
+                  -329,
+                  259,
+                  -15
+                ]
+              },
+              "rock_1_col_6": {
+                "__color": "#b8b623",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__rotate": -39,
+                "__size": [
+                  18,
+                  8
+                ],
+                "__ofs": [
+                  -308,
+                  262,
+                  -16
+                ]
+              },
+              "rock_1_col_7": {
+                "__color": "#8545e4",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__rotate": 17,
+                "__size": [
+                  6,
+                  42
+                ],
+                "__ofs": [
+                  -296,
+                  286,
+                  -16
+                ]
+              },
+              "rock_1_col_8": {
+                "__color": "#f937dc",
+                "__physics": {
+                  "__isStatic": true,
+                  "__friction": 10,
+                  "__frictionAir": 1,
+                  "__frictionStatic": 50,
+                  "__restitution": 0,
+                  "__density": 1,
+                  "__bodyType": 0
+                },
+                "__alpha": 0,
+                "__rotate": 38,
+                "__size": [
+                  5,
+                  18
+                ],
+                "__ofs": [
+                  -286,
+                  295,
+                  -16
+                ]
+              }
+            }
+          },
+          "snowman": {
+            "__color": 0.7259,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__img": "snowman_1",
+            "__needScissor": false,
+            "__size": [
+              97,
+              129
+            ],
+            "__ofs": [
+              518,
+              227,
+              -16
+            ]
+          },
+          "box_1_unbreakable": {
+            "__color": 0.695,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 10,
+              "__bodyType": 0
+            },
+            "__img": "box",
+            "__size": [
+              50,
+              50
+            ],
+            "__ofs": [
+              415,
+              215,
+              -16
+            ]
+          },
+          "plank_0_unbreakable": {
+            "__color": 0.6941,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 0.4,
+              "__frictionAir": 1,
+              "__frictionStatic": 0.6,
+              "__restitution": 0,
+              "__density": 6,
+              "__bodyType": 0
+            },
+            "__img": "plank",
+            "__size": [
+              110,
+              25
+            ],
+            "__ofs": [
+              -36,
+              214,
+              -16
+            ]
+          },
+          "box_0_unbreakable": {
+            "__color": 0.695,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 10,
+              "__bodyType": 0
+            },
+            "__img": "box",
+            "__size": [
+              50,
+              50
+            ],
+            "__ofs": [
+              415,
+              268,
+              -16
+            ]
+          },
+          "box_2_unbreakable": {
+            "__color": 0.695,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 10,
+              "__bodyType": 0
+            },
+            "__img": "box",
+            "__size": [
+              50,
+              50
+            ],
+            "__ofs": [
+              247,
+              265,
+              -16
+            ]
+          },
+          "box_3_unbreakable": {
+            "__color": 0.695,
+            "__physics": {
+              "__isStatic": false,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 10,
+              "__bodyType": 0
+            },
+            "__img": "box",
+            "__size": [
+              50,
+              50
+            ],
+            "__ofs": [
+              248,
+              215,
+              -16
+            ]
+          },
+          "lighter_1_col_2": {
+            "__color": "#68cbce",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__rotate": 5,
+            "__size": [
+              40,
+              38
+            ],
+            "__ofs": [
+              -702,
+              222,
+              -15
+            ]
+          },
+          "lighter_1_col_1": {
+            "__color": "#29d7b1",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__rotate": 4,
+            "__size": [
+              46,
+              8
+            ],
+            "__ofs": [
+              -711,
+              198,
+              -15
+            ]
+          },
+          "lighter_1_col_0": {
+            "__color": "#8e8e36",
+            "__physics": {
+              "__isStatic": true,
+              "__friction": 10,
+              "__frictionAir": 1,
+              "__frictionStatic": 50,
+              "__restitution": 0,
+              "__density": 1,
+              "__bodyType": 0
+            },
+            "__alpha": 0,
+            "__rotate": 6,
+            "__size": [
+              10,
+              117
+            ],
+            "__ofs": [
+              -717,
+              244,
+              -15
+            ]
+          },
+          "lighter_1": {
+            "__color": "#cfcd70",
+            "__alpha": 0.83,
+            "__rotate": 6,
+            "__img": "lighter_1",
+            "__size": [
+              55,
+              115
+            ],
+            "__ofs": [
+              -704,
+              240,
+              -16
+            ]
+          }
+        }
+      },
+      "_3": {
+        "__color": "#7c94c2",
+        "__img": "floor2",
+        "__size": [
+          554,
+          100
+        ],
+        "__ofs": [
+          -557,
+          336,
+          -15
+        ],
+        "__childs": {
+          "_0": {
+            "__color": "#7c94c2",
+            "__img": "floor2",
+            "__size": [
+              554,
+              100
+            ],
+            "__ofs": [
+              -21,
+              97,
+              -15
+            ],
+            "__childs": {
+              "_0": {
+                "__color": "#7c94c2",
+                "__img": "floor2",
+                "__size": [
+                  554,
+                  100
+                ],
+                "__ofs": [
+                  552,
+                  1,
+                  -15
+                ]
+              },
+              "_1": {
+                "__color": "#7c94c2",
+                "__img": "floor2",
+                "__size": [
+                  554,
+                  100
+                ],
+                "__ofs": [
+                  1105,
+                  1,
+                  -15
+                ],
+                "__childs": {
+                  "_0": {
+                    "__color": "#7c94c2",
+                    "__img": "floor2",
+                    "__size": [
+                      554,
+                      100
+                    ],
+                    "__ofs": [
+                      554,
+                      -1,
+                      -15
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "_1": {
+            "__color": "#7c94c2",
+            "__img": "floor2",
+            "__size": [
+              554,
+              100
+            ],
+            "__ofs": [
+              -549,
+              -1,
+              -15
+            ],
+            "__childs": {
+              "_0": {
+                "__color": "#7c94c2",
+                "__img": "floor2",
+                "__size": [
+                  554,
+                  100
+                ],
+                "__ofs": [
+                  -21,
+                  99,
+                  -15
+                ]
+              }
+            }
+          }
+        }
+      },
+      "_4": {
+        "__color": "#778eba",
+        "__img": "floor2",
+        "__size": [
+          554,
+          100
+        ],
+        "__ofs": [
+          -5,
+          336,
+          -15
+        ]
+      },
+      "_5": {
+        "__color": "#7990bd",
+        "__img": "floor2",
+        "__needScissor": false,
+        "__size": [
+          554,
+          100
+        ],
+        "__ofs": [
+          548,
+          336,
+          -15
+        ],
+        "__childs": {
+          "_0": {
+            "__color": "#7990bd",
+            "__img": "floor2",
+            "__needScissor": false,
+            "__size": [
+              554,
+              100
+            ],
+            "__ofs": [
+              554,
+              2,
+              -15
+            ]
+          }
+        }
+      },
+      "snow_0": {
+        "__color": "#485073",
+        "__blending": 0,
+        "__text": {
+          "__fontsize": 12,
+          "__text": "*",
+          "__italic": 1
+        },
+        "__ofs": [
+          76,
+          0,
+          -15
+        ],
+        "__childs": {
+          "snow_4": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_3": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_2": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_1": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_5": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_7": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_8": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_9": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_10": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_12": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_13": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_14": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_11": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_6": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_15": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_16": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_17": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_18": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_19": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_20": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_21": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_22": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_23": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_24": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_25": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_26": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_27": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_28": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_29": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          },
+          "snow_30": {
+            "__color": "#485073",
+            "__blending": 0,
+            "__text": {
+              "__fontsize": 12,
+              "__text": "*",
+              "__italic": 1
+            },
+            "__ofs": [
+              76,
+              0,
+              -15
+            ]
+          }
+        }
+      },
+      "sign": {
+        "__color": 0.6517,
+        "__alpha": 0.6,
+        "__rotate": -24,
+        "__img": "sign",
+        "__size": [
+          33,
+          29
+        ],
+        "__text": {
+          "__fontsize": 12,
+          "__lineWidth": 1,
+          "__lineColor": "#4b80d1",
+          "__text": "2 / 3",
+          "__fontface": "GAMERIA",
+          "__shadow": {
+            "__blur": 4,
+            "__color": 15281
+          }
+        },
+        "__ofs": [
+          -390,
+          236,
+          -3
+        ]
+      },
+      "cloud_1": {
+        "__alpha": 0.4,
+        "__img": "cloud_1",
+        "__size": [
+          222,
+          100
+        ],
+        "__ofs": [
+          -400,
+          -302
+        ]
+      },
+      "cloud_4": {
+        "__uvsTransform": 1,
+        "__padding": 0,
+        "__alpha": 0.3,
+        "__img": "cloud_2",
+        "__corner": [
+          94,
+          26
+        ],
+        "__size": [
+          94,
+          48
+        ],
+        "__transformAnchor": false,
+        "__ofs": [
+          -224,
+          -251
+        ]
+      },
+      "cloud_3": {
+        "__alpha": 0.4,
+        "__img": "cloud_3",
+        "__size": [
+          241,
+          102
+        ],
+        "__ofs": [
+          283,
+          -308
+        ]
+      },
+      "cloud_2": {
+        "__padding": 0,
+        "__alpha": 0.3,
+        "__img": "cloud_2",
+        "__size": [
+          130,
+          68
+        ],
+        "__ofs": [
+          93,
+          -237
+        ]
+      },
+      "moun": {
+        "__color": "#727b8c",
+        "__alpha": 0.7,
+        "__img": "m_1",
+        "__size": [
+          479,
+          319
+        ],
+        "__ofs": [
+          -588,
+          154,
+          -5
+        ]
+      },
+      "m_2": {
+        "__color": "#576b91",
+        "__uvsTransform": 1,
+        "__alpha": 0.7,
+        "__img": "m_1",
+        "__size": [
+          857,
+          577
+        ],
+        "__ofs": [
+          131,
+          78,
+          -3
+        ]
+      },
+      "m_3": {
+        "__color": 0.5219,
+        "__alpha": 0.4,
+        "__img": "m_2",
+        "__size": [
+          435,
+          342
+        ],
+        "__ofs": [
+          -248,
+          129,
+          -1
+        ]
+      },
+      "tree_2": {
+        "__color": "#8e96ba",
+        "__alpha": 0.7,
+        "__img": "tree_1",
+        "__size": [
+          79,
+          140
+        ],
+        "__ofs": [
+          -206,
+          229,
+          -14
+        ]
+      },
+      "m_4": {
+        "__color": "#6475a1",
+        "__alpha": 0.5,
+        "__img": "m_2",
+        "__size": [
+          318,
+          202
+        ],
+        "__ofs": [
+          709,
+          210
+        ]
+      },
+      "goblin_speech": {
+        "__color": "#19f5b8",
+        "__alpha": 0,
+        "__img": "block_1",
+        "__size": [
+          100,
+          100
+        ],
+        "__text": {
+          "__fontsize": 14,
+          "__lineWidth": 3,
+          "__fontWeight": 1
+        },
+        "__ofs": [
+          -546,
+          218,
+          -16
+        ]
+      }
+    }
+  }
+]
