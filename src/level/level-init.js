@@ -4,7 +4,7 @@ function initLevel() {
     level = null;
     player = null;
 
-    const curLvl = "level_2" //!
+    const curLvl = "level_1" //!
 
     const initPlayerSpawnX = levelsConfig[curLvl].playerSpawnX;
     const initPlayerSpawnY = levelsConfig[curLvl].playerSpawnY;

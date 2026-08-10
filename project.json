@@ -32,7 +32,8 @@
             "constants.js",
             "game-globals.js",
             "looper.js",
-            "levels-config.js"
+            "levels-config.js",
+            "animations-registry.js"
         ],
         "src/utils/": [
         ],
