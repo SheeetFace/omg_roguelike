@@ -29,6 +29,7 @@ function parseLevel() {
     worldState.targetContainer = null;
     worldState.walls = {};
     worldState.exitCells = {};
+    worldState.trader = {};
 
     if (level && level.__traverse) {
         level.__traverse(node => {
@@ -53,7 +54,9 @@ function parseLevel() {
             if (node.name && node.name.includes('exit_block')) {
                 worldState.exitCells[`${objX},${objY}`] = true;
             }
-            //! трейдер
+            if (node.name && node.name.includes('trader_block')) {
+                worldState.trader[`${objX},${objY}`] = true;
+            }
             //! энэмис???
         });
     }

@@ -96,4 +96,10 @@ function checkCellTriggers(targetGridX, targetGridY) {
         // loadNextLevel();
         return;
     }
+
+        if (worldState.trader[key] === true) {
+        consoleLog(`трейдер`);
+        // openTraderUI()
+        return
+    }
 }

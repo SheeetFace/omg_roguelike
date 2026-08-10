@@ -11,5 +11,6 @@ let worldState = {
     maxGridX: 4,
     maxGridY: 6,
     walls: {},
-    exitCells: []
+    exitCells: {},
+    trader: {},
 };
