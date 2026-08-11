@@ -82,7 +82,8 @@ function isPlayerMovePossible(targetGridX, targetGridY) {
         consoleLog("блок кретка");
         return false;
     }
-
+    if (worldState.enemies[key]) return false;
+    
     return true;
 }
 
@@ -97,9 +98,21 @@ function checkCellTriggers(targetGridX, targetGridY) {
         return;
     }
 
-        if (worldState.trader[key] === true) {
+    if (worldState.trader[key] === true) {
         consoleLog(`трейдер`);
         // openTraderUI()
         return
     }
+}
+
+function playerAttack() {
+    if (isAnimating) return;
+
+    isAnimating = true;
+    player.__img = "hero_attack_anim";
+
+    _setTimeout(() => {
+        isAnimating = false;
+        player.__img = "hero_idle";
+    }, STEP_DURATION);
 }

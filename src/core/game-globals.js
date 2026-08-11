@@ -13,4 +13,5 @@ let worldState = {
     walls: {},
     exitCells: {},
     trader: {},
+    enemies: {},
 };

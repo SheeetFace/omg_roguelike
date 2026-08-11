@@ -4,13 +4,16 @@ function initLevel() {
     level = null;
     player = null;
 
-    const curLvl = "level_1" //!
+    const curLvl = "level_2" //!
 
     const initPlayerSpawnX = levelsConfig[curLvl].playerSpawnX;
     const initPlayerSpawnY = levelsConfig[curLvl].playerSpawnY;
 
     const initPlayerRatateX = levelsConfig[curLvl].playerRotateX;
     const initPlayerRatateY = levelsConfig[curLvl].playerRotateY;
+
+    const minEnemy = levelsConfig[curLvl].minEnemies;
+    const maxEnemy = levelsConfig[curLvl].maxEnemies;
 
     level = scene.__addChildBox(curLvl);
 
@@ -21,6 +24,8 @@ function initLevel() {
 
         initPlayer(initPlayerSpawnX, initPlayerSpawnY, initPlayerRatateX, initPlayerRatateY);
 
+        if (minEnemy > 0) spawnLevelEnemies(minEnemy, maxEnemy);
+
     }, 0.01);
 }
 
@@ -30,6 +35,7 @@ function parseLevel() {
     worldState.walls = {};
     worldState.exitCells = {};
     worldState.trader = {};
+    worldState.enemies = {};
 
     if (level && level.__traverse) {
         level.__traverse(node => {
@@ -57,7 +63,6 @@ function parseLevel() {
             if (node.name && node.name.includes('trader_block')) {
                 worldState.trader[`${objX},${objY}`] = true;
             }
-            //! энэмис???
         });
     }
     worldState.halfWidth = worldState.worldWidth / 2;
@@ -66,4 +71,51 @@ function parseLevel() {
     worldState.maxGridX = floor(worldState.worldWidth / TILE_SIZE);
     worldState.maxGridY = floor(worldState.worldHeight / TILE_SIZE);
 
+}
+
+function spawnLevelEnemies(minE, maxE) {
+
+    let count = floor(random() * (maxE - minE + 1)) + minE;
+    consoleLog({count});
+
+    const container = worldState.targetContainer;
+    let spawned = 0;
+
+        while (spawned <= count -1 ) {
+        
+        const randX = floor(random() * worldState.maxGridX);
+        const randY = floor(random() * worldState.maxGridY);
+
+        const key = getPixelCoordsOrKey(randX, randY);
+
+        const isWall = worldState.walls[key] === true;
+        const isExit = worldState.exitCells[key] === true;
+        const isTrader = worldState.trader[key] === true;
+        const isAlreadyHasEnemy = worldState.enemies[key];
+        const isPlayer = (randX === player.gridX && randY === player.gridY);
+
+        if (!isWall && !isExit && !isTrader && !isPlayer && !isAlreadyHasEnemy) {
+
+            const pixels = getPixelCoordsOrKey(randX, randY, true);
+            
+            const enemyNode = container.__addChildBox({
+                __img: "trader",
+                __size: [80, 80]
+            });
+
+            enemyNode.__x = pixels.x;
+            enemyNode.__y = pixels.y;
+
+            worldState.enemies[key] = {
+                type: "enemy1",
+                hp: 30,
+                gridX: randX,
+                gridY: randY,
+                node: enemyNode
+                // броня мис крит дамаге
+            };
+
+            spawned++;
+        }
+    }
 }

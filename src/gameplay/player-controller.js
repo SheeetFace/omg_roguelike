@@ -9,6 +9,8 @@ function initGameInput() {
             case 's': case 'arrowdown':  movePlayer(0, 1);   return true;
             case 'a': case 'arrowleft':  movePlayer(-1, 0);  return true;
             case 'd': case 'arrowright': movePlayer(1, 0);   return true;
+            
+            case ' ': case 'spacebar':   playerAttack();     return true;
         }
 
         return false;
