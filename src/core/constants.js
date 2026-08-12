@@ -1,6 +1,6 @@
 const TILE_SIZE = 100;
 
-const STEP_DURATION = 0.7;
+const STEP_DURATION = 0.6;
 
 const PLAYER_CONFIG = {
         __img: "hero_idle",

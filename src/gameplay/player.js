@@ -11,7 +11,7 @@ function initPlayer(gridX, gridY, rX, rY) {
     player.gridX = gridX;
     player.gridY = gridY;
 
-    registerHeroAnimations();
+    // registerHeroAnimations();
 
     rotatePlayer(rX, rY);
 }
@@ -109,7 +109,36 @@ function playerAttack() {
     if (isAnimating) return;
 
     isAnimating = true;
+
     player.__img = "hero_attack_anim";
+
+    const angleInRadians = player.__rotate * DEG2RAD;
+    
+    consoleLog({angleInRadians});
+
+    const dX = round(cos(angleInRadians));
+    const dY = round(-sin(angleInRadians));
+
+    const targetX = player.gridX + dX;
+    const targetY = player.gridY + dY;
+
+    const key = getPixelCoordsOrKey(targetX, targetY);
+
+    if (worldState.enemies && worldState.enemies[key]) {
+        let enemy = worldState.enemies[key];
+
+        if (enemy.hp > 0) {
+            enemy.hp -= 10; // чек веапон броню мисы и тд
+            consoleLog({hp: enemy.hp});
+            if (enemy.hp <= 0) {
+                _setTimeout(() => {
+                    enemy.node.__destruct();
+                    delete worldState.enemies[key];
+                    // добавить на эту клету (.deadEmeny[key]) труп либо бутылку
+                }, 0.3);
+            }
+        }
+    }
 
     _setTimeout(() => {
         isAnimating = false;

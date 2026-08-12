@@ -23,6 +23,7 @@ function initLevel() {
         initGameInput()
 
         initPlayer(initPlayerSpawnX, initPlayerSpawnY, initPlayerRatateX, initPlayerRatateY);
+        registerHeroAnimations();
 
         if (minEnemy > 0) spawnLevelEnemies(minEnemy, maxEnemy);
 
@@ -100,7 +101,7 @@ function spawnLevelEnemies(minE, maxE) {
             
             const enemyNode = container.__addChildBox({
                 __img: "trader",
-                __size: [80, 80]
+                __size: [55, 55]
             });
 
             enemyNode.__x = pixels.x;
