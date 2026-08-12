@@ -48,7 +48,8 @@
             "level-init.js"
         ],
         "src/ui/": [
-            "level-end-choice-screen.js"
+            "level-end-choice-screen.js",
+            "hud-screen.js"
         ],
         "src/": [
             "loading.js",

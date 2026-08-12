@@ -1,10 +1,11 @@
 function showLevelEndChoice() {
     // stopAndResetAmbient();
     // playSound('win');
+    closeWindow('hud');
 
     showWindow('level_end_choice', wnd => {
         isAnimating = true;
-        
+
         wnd.__setAliasesData({
             button_next_lvl: {
                 __onTap() {

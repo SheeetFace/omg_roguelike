@@ -1,6 +1,8 @@
 function initLevel() {
     options.__soundDisabled = 0;
 
+    closeWindow('hud');
+
     if (level && level.__destruct) level.__destruct();
 
     level = null;
@@ -30,7 +32,9 @@ function initLevel() {
 
         if (minEnemy > 0) spawnLevelEnemies(minEnemy, maxEnemy);
 
+        showHud();
     }, 0.01);
+
 }
 
 function parseLevel() {

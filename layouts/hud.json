@@ -7,188 +7,111 @@
       19
     ],
     "__childs": {
-      "button_restart": {
-        "__alpha": 0.8,
-        "__img": "button_restart",
-        "__size": [
-          60,
-          60
-        ],
-        "__scaleF": 0,
-        "__ofs": [
-          590,
-          -330,
-          -100
-        ],
-        "__keyframes": {
-          "loop": 0,
-          "__loopDisabled": 1,
-          "__easing": 27,
-          "__track": {
-            "__transform": {
-              "0": [
-                590,
-                -330,
-                0,
-                0,
-                0
-              ],
-              "81": [
-                590,
-                -330,
-                1,
-                1,
-                0
-              ],
-              "110": [
-                590,
-                -330,
-                1,
-                1,
-                0
-              ]
-            }
-          }
-        }
-      },
-      "button_sound": {
-        "__alpha": 0.8,
-        "__img": "button_sound_on",
-        "__size": [
-          60,
-          60
-        ],
-        "__ofs": [
-          -630,
-          -330,
-          -100
-        ],
-        "__keyframes": {
-          "loop": 0,
-          "__loopDisabled": 1,
-          "__easing": 27,
-          "__track": {
-            "__transform": {
-              "0": [
-                -630,
-                -330,
-                0,
-                0,
-                0
-              ],
-              "81": [
-                -630,
-                -330,
-                1,
-                1,
-                0
-              ]
-            }
-          }
-        }
-      },
-      "button_lang": {
-        "__alpha": 0.8,
-        "__img": "button_lang_en",
-        "__visible": 0,
-        "__size": [
-          60,
-          60
-        ],
-        "__ofs": [
-          -530,
-          -330
-        ],
-        "__keyframes": {
-          "loop": 0,
-          "__loopDisabled": 1,
-          "__easing": 27,
-          "__track": {
-            "__transform": {
-              "0": [
-                -530,
-                -330,
-                0,
-                0,
-                0
-              ],
-              "81": [
-                -530,
-                -330,
-                1,
-                1,
-                0
-              ]
-            }
-          }
-        }
-      },
-      "button_next": {
+      "hp_container": {
+        "__color": 0,
         "__alpha": 0.9,
-        "__img": "button_empty",
+        "sha": 1,
+        "sva": 1,
         "__size": [
-          133,
-          41
+          784,
+          15
         ],
         "__text": {
           "__color": "#3872ae",
           "__fontsize": 18,
-          "__text": "next_lvl",
           "__fontface": "GAMERIA",
           "__fontWeight": 1
         },
-        "__ofs": [
-          662,
-          349
-        ],
-        "__keyframes": {
-          "loop": 0,
-          "__loopDisabled": 1,
-          "__easing": 27,
-          "__keyframes": {
-            "__transform": {
-              "0": {
-                "va": [
-                  662.25,
-                  348.6,
-                  0,
-                  0,
-                  0
-                ]
-              },
-              "110": {
-                "va": [
-                  662.25,
-                  348.6,
-                  1,
-                  1,
-                  0
-                ]
-              }
-            },
-            "__color": {
-              "0": {
-                "va": {
-                  "r": 1,
-                  "g": 1,
-                  "b": 1
-                }
-              },
-              "498": {
-                "0": {
-                  "va": {
-                    "r": 1,
-                    "g": 1,
-                    "b": 1
-                  }
-                },
-                "va": {
-                  "r": 1,
-                  "g": 1,
-                  "b": 1
-                }
-              }
+        "__y": 350,
+        "__childs": {
+          "hp_line_fill": {
+            "__color": "#39730d",
+            "__needScissor": false,
+            "__size": [
+              780,
+              10
+            ],
+            "__text": {
+              "__color": 0,
+              "__fontsize": 15,
+              "__fontspacing": 4,
+              "__fontface": "GAMERIA"
             }
+          },
+          "hp_counter": {
+            "__color": "#7918da",
+            "__rotate": 12,
+            "__text": {
+              "__color": "#ffffb1",
+              "__lineWidth": 3,
+              "__fontspacing": 5,
+              "__text": "100",
+              "__fontface": "GAMERIA"
+            }
+          }
+        }
+      },
+      "lvl_contaiber": {
+        "__color": "#cc289c",
+        "__rotate": -7,
+        "__text": {
+          "__color": "#ffffb1",
+          "__fontsize": 35,
+          "__lineWidth": 3,
+          "__text": "LVL ",
+          "__fontface": "GAMERIA"
+        },
+        "__ofs": [
+          540,
+          -340
+        ],
+        "__childs": {
+          "lvl_counter": {
+            "__color": "#4f74a2",
+            "__rotate": 13,
+            "__text": {
+              "__color": "#ffffb1",
+              "__fontsize": 37,
+              "__lineWidth": 5,
+              "__text": "1",
+              "__fontface": "GAMERIA"
+            },
+            "__ofs": [
+              47,
+              -1
+            ]
+          }
+        }
+      },
+      "_2": {
+        "__rotate": 53,
+        "__img": "bottle",
+        "__size": [
+          58,
+          21
+        ],
+        "__ofs": [
+          524,
+          325
+        ],
+        "__childs": {
+          "bottle_counter": {
+            "__size": [
+              100,
+              100
+            ],
+            "__text": {
+              "__color": "#ffffb1",
+              "__fontsize": 25,
+              "__lineWidth": 3,
+              "__fontspacing": 3,
+              "__text": "999",
+              "__fontface": "GAMERIA"
+            },
+            "__ofs": [
+              4,
+              28
+            ]
           }
         }
       }
