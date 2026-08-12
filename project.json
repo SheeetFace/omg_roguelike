@@ -47,6 +47,9 @@
         "src/level/": [
             "level-init.js"
         ],
+        "src/ui/": [
+            "level-end-choice-screen.js"
+        ],
         "src/": [
             "loading.js",
             "main.js"
@@ -112,7 +115,8 @@
             "win.json",
             "new_win.json",
             "hud.json",
-            "start_menu.json"
+            "start_menu.json",
+            "level_end_choice.json"
         ],
         [
             "shaders",

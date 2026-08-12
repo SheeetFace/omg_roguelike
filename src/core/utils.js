@@ -6,3 +6,12 @@ function getPixelCoordsOrKey(gridX, gridY, asObject) {
     
     return `${targetPixelX},${targetPixelY}`;
 }
+
+function getSavedLevelIndex() {
+    let saved = localStorage.getItem('current_level_index')|| "1";
+    return +saved;
+}
+
+function saveLevelIndex(index) {
+    localStorage.setItem('current_level_index', index.toString());
+}

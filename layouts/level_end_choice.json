@@ -1,0 +1,68 @@
+[
+  {
+    "__color": "#a34040",
+    "name": "level_end_choice",
+    "__alpha": 0.4,
+    "__size": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "__text": {},
+    "__childs": {
+      "button_back_to_hub": {
+        "__color": "#34ff00",
+        "__size": [
+          493,
+          60
+        ],
+        "__scaleF": 1.1,
+        "__text": {
+          "__color": "#e3f2fb",
+          "__fontsize": 28,
+          "__lineWidth": 4,
+          "__lineColor": 747955,
+          "__fontspacing": 0.5,
+          "__text": "СПУСТИТЬСЯ В ХАБ",
+          "__shader": "",
+          "__fontface": "GAMERIA",
+          "__fontWeight": 1,
+          "__shadow": {
+            "__color": "#2784cc"
+          }
+        },
+        "__ofs": [
+          -66,
+          313
+        ]
+      },
+      "button_next_lvl": {
+        "__color": 255,
+        "__img": "button_empty",
+        "__size": [
+          510,
+          60
+        ],
+        "__scaleF": 1.1,
+        "__text": {
+          "__color": "#e3f2fb",
+          "__fontsize": 28,
+          "__lineWidth": 4,
+          "__lineColor": 747955,
+          "__fontspacing": 0.5,
+          "__text": "ПРОДОЛЖИТЬ ПУТЕШЕСТРИВЕ",
+          "__fontface": "GAMERIA",
+          "__fontWeight": 1,
+          "__shadow": {
+            "__color": "#2784cc"
+          }
+        },
+        "__ofs": [
+          -64,
+          209
+        ]
+      }
+    }
+  }
+]

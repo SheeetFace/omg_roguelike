@@ -11,8 +11,6 @@ function initPlayer(gridX, gridY, rX, rY) {
     player.gridX = gridX;
     player.gridY = gridY;
 
-    // registerHeroAnimations();
-
     rotatePlayer(rX, rY);
 }
 
@@ -83,7 +81,7 @@ function isPlayerMovePossible(targetGridX, targetGridY) {
         return false;
     }
     if (worldState.enemies[key]) return false;
-    
+
     return true;
 }
 
@@ -94,7 +92,16 @@ function checkCellTriggers(targetGridX, targetGridY) {
 
     if (worldState.exitCells[key] === true) {
         consoleLog(`выход`);
-        // loadNextLevel();
+
+        const currentLevelIndex = getSavedLevelIndex();
+
+        if (currentLevelIndex === 1) {
+            saveLevelIndex(2);
+            initLevel();
+        } else {
+            showLevelEndChoice();
+        }
+
         return;
     }
 
@@ -113,7 +120,6 @@ function playerAttack() {
     player.__img = "hero_attack_anim";
 
     const angleInRadians = player.__rotate * DEG2RAD;
-    
     consoleLog({angleInRadians});
 
     const dX = round(cos(angleInRadians));

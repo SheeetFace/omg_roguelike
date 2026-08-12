@@ -1,10 +1,13 @@
 function initLevel() {
     options.__soundDisabled = 0;
 
+    if (level && level.__destruct) level.__destruct();
+
     level = null;
     player = null;
 
-    const curLvl = "level_2" //!
+    const curLvl = "level_" + getSavedLevelIndex(); 
+    consoleLog({curLvl});
 
     const initPlayerSpawnX = levelsConfig[curLvl].playerSpawnX;
     const initPlayerSpawnY = levelsConfig[curLvl].playerSpawnY;
