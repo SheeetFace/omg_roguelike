@@ -14,7 +14,8 @@ function showLevelEndChoice() {
 
                     isAnimating = false;
 
-                    saveLevelIndex(getSavedLevelIndex() + 1);
+                    // saveLevelIndex(getSavedLevelIndex() + 1); //!
+                    saveLevelIndex(1);
 
                     initLevel();
                 },

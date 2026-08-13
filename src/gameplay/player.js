@@ -136,12 +136,13 @@ function playerAttack() {
         if (enemy.hp > 0) {
             enemy.hp -= 10; // чек веапон броню мисы и тд
             consoleLog({hp: enemy.hp});
+            updateSingleEnemyHudIcon(enemy); 
             if (enemy.hp <= 0) {
                 _setTimeout(() => {
                     enemy.node.__destruct();
                     delete worldState.enemies[key];
                     // добавить на эту клету (.deadEmeny[key]) труп либо бутылку
-                }, 0.3);
+                }, ATTACK_DELAY);
             }
         }
     }
