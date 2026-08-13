@@ -1,6 +1,6 @@
 {
     "buildFlags": {
-        "VERSION": "1.0.0"
+        "VERSION": "1.0.1"
     },
     "src": {
         "../../eeditor/engine/": [
@@ -193,7 +193,7 @@
                 ],
                 "dst": "build_res/min.js",
                 "rmdebug": "debug/undebug,3d/no3d,cheats/endcheats,multiclass/unmulticlass",
-                "configuration": "debug"
+                "configuration": "release"
             },
             {
                 "type": "clean",

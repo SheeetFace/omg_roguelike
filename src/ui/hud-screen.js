@@ -1,10 +1,10 @@
-const enemyHpTextStyle = {
-    __color: "#ffffb1",
-    __fontsize: 14,
-    __lineWidth: 1,
-    __fontspacing: 2,
-    __fontface: "GAMERIA"
-};
+// const enemyHpTextStyle = {
+//     __color: "#ffffb1",
+//     __fontsize: 14,
+//     __lineWidth: 1,
+//     __fontspacing: 2,
+//     __fontface: "GAMERIA"
+// };
 let currentHp = 88;
 let maxHp = 100;
 
@@ -61,7 +61,12 @@ function spawnEnemyHudIcons(container) {
         let hpTextNode = box.__addChildBox({
             __text: {
                 __text: currentEnemy.hp,
-                ...enemyHpTextStyle
+                // ...enemyHpTextStyle
+                __color: "#ffffb1",
+                __fontsize: 14,
+                __lineWidth: 1,
+                __fontspacing: 2,
+                __fontface: "GAMERIA"
             },
             __ofs: [15, 10, 0]
         });
@@ -78,7 +83,7 @@ function updateSingleEnemyHudIcon(liveEnemy) {
     if (!liveEnemy) return;
 
     const textNode = liveEnemy.hudTextNode;
-    const boxNode  = liveEnemy.hudBoxNode;
+    const boxNode = liveEnemy.hudBoxNode;
 
     if (liveEnemy.hp > 0) {
         textNode.__text.__text = liveEnemy.hp;
@@ -86,8 +91,7 @@ function updateSingleEnemyHudIcon(liveEnemy) {
         _setTimeout(() => {
             textNode.__text.__text = 0;
             boxNode.__color = "#ff3333";
-            
+
         }, ATTACK_DELAY);
     }
 }
-

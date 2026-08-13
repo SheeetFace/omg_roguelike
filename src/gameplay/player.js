@@ -12,6 +12,8 @@ function initPlayer(gridX, gridY, rX, rY) {
     player.gridY = gridY;
 
     rotatePlayer(rX, rY);
+
+    updateCameraFocus(startPixels.x, startPixels.y)
 }
 
 function movePlayer(x, y) {
@@ -47,12 +49,15 @@ function movePlayer(x, y) {
         __y: pixels.y
     }, STEP_DURATION);
 
+    updateCameraFocus(pixels.x, pixels.y)
+
     _setTimeout(() => {
         isAnimating = false;
         player.__img = "hero_idle";
         checkCellTriggers(player.gridX, player.gridY);
     }, STEP_DURATION);
 }
+
 
 function rotatePlayer(x, y) {
     if (!player) return;

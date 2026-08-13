@@ -15,3 +15,13 @@ function getSavedLevelIndex() {
 function saveLevelIndex(index) {
     localStorage.setItem('current_level_index', index.toString());
 }
+
+function updateCameraFocus(x, y) {
+
+    if (!level) return;
+
+    level.__anim({
+        __x: -x,
+        __y: -y
+    }, STEP_DURATION);
+}
