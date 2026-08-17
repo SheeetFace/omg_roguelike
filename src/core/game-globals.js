@@ -1,6 +1,8 @@
 let level = null;
 let player = null;
-let isAnimating = false;
+
+let gameState = { level: 1 };
+let cameraTarget = { x: 0, y: 0 };
 
 let worldState = {
     targetContainer: null, //ph_world - мб нужен будет

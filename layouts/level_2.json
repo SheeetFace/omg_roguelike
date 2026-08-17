@@ -338,6 +338,19 @@
               -250,
               -1
             ]
+          },
+          "player_spawn": {
+            "__rotate": 90,
+            "__img": "hero_idle",
+            "__centerFill": 1,
+            "__size": [
+              100,
+              100
+            ],
+            "__ofs": [
+              -50,
+              250
+            ]
           }
         }
       },

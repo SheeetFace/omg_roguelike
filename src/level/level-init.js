@@ -1,21 +1,15 @@
 function initLevel() {
     options.__soundDisabled = 0;
-
     closeWindow('hud');
 
     if (level && level.__destruct) level.__destruct();
 
     level = null;
     player = null;
+    playerEntity = null;
 
-    const curLvl = "level_" + getSavedLevelIndex(); 
+    const curLvl = "level_" + getSavedLevelIndex();
     consoleLog({curLvl});
-
-    const initPlayerSpawnX = levelsConfig[curLvl].playerSpawnX;
-    const initPlayerSpawnY = levelsConfig[curLvl].playerSpawnY;
-
-    const initPlayerRatateX = levelsConfig[curLvl].playerRotateX;
-    const initPlayerRatateY = levelsConfig[curLvl].playerRotateY;
 
     const minEnemy = levelsConfig[curLvl].minEnemies;
     const maxEnemy = levelsConfig[curLvl].maxEnemies;
@@ -25,25 +19,24 @@ function initLevel() {
     _setTimeout(() => {
         if (!level || level.__destructed) return;
         parseLevel();
-        initGameInput()
+        initGameInput();
 
-        initPlayer(initPlayerSpawnX, initPlayerSpawnY, initPlayerRatateX, initPlayerRatateY);
+        initPlayer();
         registerHeroAnimations();
 
         if (minEnemy > 0) spawnLevelEnemies(minEnemy, maxEnemy);
 
-        showHud();
+        _setTimeout(() => showHud(), STEP_DURATION);
     }, 0.01);
-
 }
 
 function parseLevel() {
-
     worldState.targetContainer = null;
     worldState.walls = {};
     worldState.exitCells = {};
     worldState.trader = {};
     worldState.enemies = {};
+    worldState.playerSpawn = null;
 
     if (level && level.__traverse) {
         level.__traverse(node => {
@@ -51,20 +44,20 @@ function parseLevel() {
 
             if (node.name === 'ph_world') {
                 worldState.targetContainer = node;
-
                 if (node.__width) worldState.worldWidth = node.__width;
                 if (node.__height) worldState.worldHeight = node.__height;
             }
 
-            // const objX = node.__x ?? 0;
-            // const objY = node.__y ?? 0;
+            if (node.name === 'player_spawn') {
+                worldState.playerSpawn = node;
+            }
+
             const objX = node.__x !== undefined ? node.__x : 0;
             const objY = node.__y !== undefined ? node.__y : 0;
 
             if (node.name && node.name.includes('wall_block')) {
                 worldState.walls[`${objX},${objY}`] = true;
             }
-
             if (node.name && node.name.includes('exit_block')) {
                 worldState.exitCells[`${objX},${objY}`] = true;
             }
@@ -73,12 +66,11 @@ function parseLevel() {
             }
         });
     }
+
     worldState.halfWidth = worldState.worldWidth / 2;
     worldState.halfHeight = worldState.worldHeight / 2;
-
     worldState.maxGridX = floor(worldState.worldWidth / TILE_SIZE);
     worldState.maxGridY = floor(worldState.worldHeight / TILE_SIZE);
-
 }
 
 function spawnLevelEnemies(minE, maxE) {
@@ -89,12 +81,12 @@ function spawnLevelEnemies(minE, maxE) {
     const container = worldState.targetContainer;
     let spawned = 0;
 
-        while (spawned <= count -1 ) {
-        
+    while (spawned <= count - 1) {
+
         const randX = floor(random() * worldState.maxGridX);
         const randY = floor(random() * worldState.maxGridY);
 
-        const key = getPixelCoordsOrKey(randX, randY);
+        const key = getGridKey(randX, randY);
 
         const isWall = worldState.walls[key] === true;
         const isExit = worldState.exitCells[key] === true;
@@ -104,8 +96,9 @@ function spawnLevelEnemies(minE, maxE) {
 
         if (!isWall && !isExit && !isTrader && !isPlayer && !isAlreadyHasEnemy) {
 
-            const pixels = getPixelCoordsOrKey(randX, randY, true);
-            
+            // const pixels = getPixelCoordsOrKey(randX, randY, true);
+            const pixels = getPixelCoords(randX, randY);
+
             const enemyNode = container.__addChildBox({
                 __img: "trader",
                 __size: [55, 55]

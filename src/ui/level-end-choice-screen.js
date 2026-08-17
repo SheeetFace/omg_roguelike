@@ -4,7 +4,9 @@ function showLevelEndChoice() {
     closeWindow('hud');
 
     showWindow('level_end_choice', wnd => {
-        isAnimating = true;
+
+    wnd.__x = camera.__x;
+    wnd.__y = -camera.__y;
 
         wnd.__setAliasesData({
             button_next_lvl: {
@@ -12,10 +14,11 @@ function showLevelEndChoice() {
                     // stopAndResetAmbient();
                     closeWindow('level_end_choice');
 
-                    isAnimating = false;
-
                     // saveLevelIndex(getSavedLevelIndex() + 1); //!
-                    saveLevelIndex(1);
+                    if(getSavedLevelIndex() === 2) {
+                        saveLevelIndex(1);
+                    }
+                    // saveLevelIndex(1);
 
                     initLevel();
                 },
@@ -25,8 +28,6 @@ function showLevelEndChoice() {
             button_back_to_hub: {
                 __onTap() {
                     closeWindow('level_end_choice');
-
-                    isAnimating = false;
                     // stopAndResetAmbient();
 
                     saveLevelIndex(1);

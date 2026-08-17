@@ -115,15 +115,16 @@
         }
       },
       "enemy_health_bar_container": {
-        "__color": "#a958b4",
-        "__alpha": 0,
+        "__color": "#1b8e04",
+        "__alpha": 0.3,
+        "__rotate": 2,
         "__size": [
           1145,
-          40
+          60
         ],
         "__ofs": [
-          -75,
-          -360
+          -82,
+          -350
         ]
       },
       "_4": {

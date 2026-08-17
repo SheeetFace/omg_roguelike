@@ -112,12 +112,15 @@
             "layout",
             "level_1.json",
             "level_2.json",
-            "level_3.json",
             "win.json",
             "new_win.json",
             "hud.json",
             "start_menu.json",
-            "level_end_choice.json"
+            "level_end_choice.json",
+            "level_exit.json",
+            "room_1.json",
+            "room_2.json",
+            "room_3.json"
         ],
         [
             "shaders",

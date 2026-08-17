@@ -5,22 +5,8 @@
 //preparedFames
 //reverseLoop
 
-const heroWalk = [
-    "hero_walk_1",
-    "hero_walk_2",
-    "hero_walk_3",
-    "hero_walk_1",
-    "hero_walk_2",
-    "hero_walk_3"
-]
-
-const heroAttack = [
-    "hero_attack_1",
-     "hero_attack_2", 
-     "hero_attack_3", 
-     "hero_attack_4", 
-     "hero_attack_5"
-]
+const heroWalk =[1,2,3,1,2,3].map(i => "hero_walk_" + i);
+const heroAttack = [1,2,3,4,5].map(i => "hero_attack_" + i);
 
 function registerHeroAnimations() {
     registerSpriteSheetAnimations({"hero_walk_anim": [6, 8, heroWalk, 0, 0, 0, false]});
