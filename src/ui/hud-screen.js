@@ -6,8 +6,6 @@ function showHud() {
     const hpPercent = mmin(1, mmax(0, currentHp / 100));
 
     showWindow('hud', wnd => {
-        wnd.__x = cameraTarget.x;
-        wnd.__y = cameraTarget.y;
 
         const maxBarWidth = wnd.hp_container.hp_line_fill.__size.x;
 

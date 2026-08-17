@@ -26,7 +26,7 @@ function initLevel() {
 
         if (minEnemy > 0) spawnLevelEnemies(minEnemy, maxEnemy);
 
-        _setTimeout(() => showHud(), STEP_DURATION);
+        showHud()
     }, 0.01);
 }
 

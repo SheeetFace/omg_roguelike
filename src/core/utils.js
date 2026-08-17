@@ -18,15 +18,11 @@ function getGridFromPixels(pixelX, pixelY) {
 }
 
 function updateCameraFocus(x, y) {
-    cameraTarget.x = x;
-    cameraTarget.y = y;
-
-    if (!camera) return;
-    camera.__anim({ __x: x, __y: -y }, STEP_DURATION);
-
-    windowManager.$('hud', function(hud) {
-        hud.__anim({ __x: x, __y: y }, STEP_DURATION);
-    });
+    if (!levelCamera) return;
+    levelCamera.__anim({
+        __x: x,
+        __y: -y
+    }, STEP_DURATION);
 }
 
 function loadGameState() {
@@ -34,9 +30,14 @@ function loadGameState() {
     if (saved) {
         try {
             const parsed = JSON.parse(saved);
-            gameState = { ...gameState,...parsed };
+            gameState = {
+                ...gameState,
+                ...parsed
+            };
         } catch (e) {
-            gameState = {level: 1}
+            gameState = {
+                level: 1
+            }
         }
     }
 }
